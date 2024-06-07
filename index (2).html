@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicVibes</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        Here is a wonderful CSS design for the HTML code:
+
+*styles.css*
+
+*Reset CSS*
+
+- {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+*Header*
+
+header {
+background-color: #333;
+color: #fff;
+padding: 1em;
+text-align: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+margin: 0 1em;
+}
+
+.logo img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+
+nav li {
+margin-right: 2em;
+}
+
+nav a {
+color: black;
+text-decoration: none;
+}
+
+*Hero Section*
+
+.hero {
+background-image: linear-gradient(to bottom, #333, #555);
+color: #fff;
+padding: 2em;
+text-align: center;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.banner {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.cta {
+margin-top: 2em;
+}
+
+.cta button {
+background-color: #333;
+color: #fff;
+padding: 1em 2em;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+*Featured Playlists*
+
+.featured-playlists {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.playlist {
+margin: 1em;
+width: 60%;
+}
+
+.playlist img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.playlist h2 {
+margin-top: 0;
+}
+
+.playlist p {
+margin-bottom: 1em;
+}
+
+*Trending Videos*
+
+.trending-videos {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.video {
+margin: 1em;
+width: 60%;
+}
+
+.video img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.video h2 {
+margin-top: 0;
+}
+
+.video p {
+margin-bottom: 1em;
+}
+
+*Search Bar*
+
+.search-bar {
+margin-top: 2em;
+}
+
+.search-bar input {
+padding: 1em;
+border: none;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+width: 80%;
+margin-bottom: 50px;
+}
+
+
+     
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        #upload-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="file"],
+        select,
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #003399;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 0;
+        }
+
+        footer b {
+            font-size: 1em;
+        }
+
+        footer li {
+            list-style: none;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#searchForm {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 230px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #lightblue;
+}
+
+#searchResults {
+    margin-top: 20px;
+}
+
+#searchResults div {
+color: black;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#searchResults div:last-child {
+    margin-bottom: 0;
+}
+
+a{text-decoration: none;
+display: block;}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="2.jpg" alt="MusicVibes Logo">  <section class="search-bar"></div>
+            <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search for music..."> <button type="submit">Search</button>
+    </form>
+    <div id="searchResults">
+        <!-- Search results will be displayed here -->
+    </div>
+    
+    <script>
+        // Mock music data
+        const musicData = [
+            { title: "Sorry", artist: "Justin Bieber" },
+            { title: "Song 2", artist: "Artist 2" },
+            { title: "Song 3", artist: "Artist 3" },
+            { title: "Song 4", artist: "Artist 4" },
+            { title: "Song 5", artist: "Artist 5" }
+        ];
+
+        // Function to display search results
+        function displayResults(results) {
+            const searchResultsDiv = document.getElementById("searchResults");
+            searchResultsDiv.innerHTML = "";
+
+            results.forEach(result => {
+                const resultDiv = document.createElement("div");
+                resultDiv.textContent = `${result.title} by ${result.artist}`;
+                searchResultsDiv.appendChild(resultDiv);
+            });
+        }
+
+        // Function to handle form submission
+        document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            const query = document.getElementById("searchInput").value.toLowerCase();
+
+            // Filter music data based on the search query
+            const results = musicData.filter(song => {
+                return song.title.toLowerCase().includes(query) || song.artist.toLowerCase().includes(query);
+            });
+
+            displayResults(results);
+        });
+    </script>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">Upload</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="banner">
+            <img src="banner.jpg" alt="Featured Music Video">
+        </div>
+        <div class="cta">
+            <button>Play</button>
+            <button>Explore</button>
+            <button>Upload</button>
+        </div>
+    </section>
+
+    <!-- Featured Playlists -->
+    <section class="featured-playlists">
+        <!-- Playlist 1 -->
+        <div class="playlist">
+            <img src="1.jpg" alt="Playlist 1 Cover">
+            <h2>BELIEVE THE VIBES</h2>
+            <p>Get ready to groove with the smoothest tunes from Justin Bieber's discography! From 'Sorry' to 'Love Yourself', this playlist is packed with hits to keep you vibing all day long</p>
+            <p><b>By: Justin Bieber</b></p>
+            <button><a href="#">Play</a></button>
+            <button><a href="#">View more</a></button>
+        </div>
+        <!-- Playlist 2, 3, ... -->
+    </section>
+
+    <!-- Trending Videos -->
+    <section class="trending-videos">
+        <!-- Video 1 -->
+        <div class="video">
+            <img src="video1.jpg" alt="Video 1 Thumbnail">
+            <h2>FREAKY FRIDAY</h2>
+            <p><b>By: Lil dick Chris brown</b></p>
+            <p>Views: 100,000</p>
+            <button><a href="#">Play</a></button>
+            <button><a href="#">View more</a></button>
+        </div>
+        <!-- Video 2, 3, ... -->
+    </section>
+
+    <!-- Search Bar -->
+  
+
+    <!-- Scripts -->
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    
+        
+    </header>
+
+    <form id="upload-form" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required>
+        </div>
+
+        <div class="form-group">
+            <label for="album">Album:</label>
+            <input type="text" id="album" name="album" required>
+        </div>
+
+        <div class="form-group">
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre" required>
+                <option value="Pop">Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
+                <option value="Electronic">Electronic</option>
+                <option value="Classical">Classical</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Folk">Folk</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="file">Music File:</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+
+        <button type="submit">Upload Music</button>
+    </form>
+
+    <ul id="download-list">
+        <!-- List of available music files will be displayed here -->
+    </ul>
+
+    <audio id="music-player" controls>
+        Your browser does not support the audio element.
+    </audio>
+
+    <footer>
+        <b>Created by Onyuthfua Owen</b>
+        <ul>
+            <li>Call or WhatsApp: +256782086956</li>
+            <li>Facebook: Onyuthfua Owen</li>
+            <li>Email: <a href="mailto:onyuthfuaowen@gmail.com">onyuthfuaowen@gmail.com</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
+
