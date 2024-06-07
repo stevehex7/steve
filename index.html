@@ -387,13 +387,8 @@ display: block;}
         <div class="banner">
             <img src="banner.jpg" alt="Featured Music Video">
         </div>
-        <div class="cta">
-    <button onclick="openFile('https://files.fm/f/acwn44tcua')">Play</button>
-            <script>
-                function openFile(url) {
-    window.open(url, '_blank');
-}
-            </script>
+
+    <button onclick="document.getElementById('filesfm_embed_js__acwn44tcua').contentWindow.postMessage({'method': 'play'}, '*');">Play</button>
             <button>Explore</button>
             <button>Upload</button>
         </div>
