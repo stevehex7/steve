@@ -388,7 +388,12 @@ display: block;}
             <img src="banner.jpg" alt="Featured Music Video">
         </div>
         <div class="cta">
-            <button>Play</button>
+    <button onclick="openFile('https://files.fm/f/acwn44tcua')">Play</button>
+            <script>
+                function openFile(url) {
+    window.open(url, '_blank');
+}
+            </script>
             <button>Explore</button>
             <button>Upload</button>
         </div>
