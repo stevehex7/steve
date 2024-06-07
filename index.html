@@ -388,8 +388,16 @@ display: block;}
             <img src="banner.jpg" alt="Featured Music Video">
         </div>
 
-    <button onclick="document.getElementById('filesfm_embed_js__acwn44tcua').contentWindow.postMessage({'method': 'play'}, '*');">Play</button>
-            <button>Explore</button>
+   <div class="player">
+    <video id="player" controls>
+        <source src="https://files.fm/f/acwn44tcua" type="video/mp4">
+    </video>
+</div>
+
+<script src="https://cdn.plyr.io/3.6.5/plyr.js"></script>
+<script>
+    const player = new Plyr('#player');
+</script>
             <button>Upload</button>
         </div>
     </section>
